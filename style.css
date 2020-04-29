@@ -1,0 +1,8 @@
+body {
+    background-color: rgb(202, 199, 199);
+}
+.container {
+    max-width: 1000px;
+    margin: auto;
+    background-color: white;
+}

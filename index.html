@@ -1,22 +1,21 @@
 <!DOCTYPE html>
 <html lang="en-US">
 
-</html>
-
 <head>
     <title>Youtube Video Player</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
     <header>
         <nav>
             <img id="menu">
             <img id="youtube_logo">
             <div>
-            <input type="text" placeholder="Search">
-            <img id="search_icon">
+                <input type="text" placeholder="Search">
+                <img id="search_icon">
             </div>
             <img id="upload">
             <button id="signin">Sign in</button>
@@ -28,9 +27,26 @@
             <p>You are viewing YouTube in English (US). You can change this preference below</p>
         </div>
         <div>
-            <a href="" >Learn more</a>
+            <a href="">Learn more</a>
         </div>
     </header>
+    <section class="video">
+        <section id="video_screen">
+            <video width="640" height="360" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag, please use chrome v4.0 or later.
+            </video>
+        </section>
+        <section id=video_details>
+            <label id="video_title">A bunny video part 1: The Crash</label>
+            <img id="userlogo" src="" alt="userlogo">
+            <div id="username"><p>Jane & Ahmad</p></div>
+            <img id="subscribe" src="" alt="subscribe">
+            <label id="views">20,391 views</label>
+            <button id="add">Add to</button>
+        </section>
+    </section>
+
 
 </body>
 

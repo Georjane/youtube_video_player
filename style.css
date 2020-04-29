@@ -5,4 +5,11 @@ body {
     max-width: 1000px;
     margin: auto;
     background-color: white;
+    padding: 20px;
+}
+nav {
+    display: inline;
+}
+#signin {
+    float: right;
 }

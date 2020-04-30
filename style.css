@@ -8,8 +8,35 @@ body {
     padding: 20px;
 }
 nav {
-    display: inline;
+    display: flex;
+    justify-content: space-between;
+    
 }
 #signin {
-    float: right;
+    width: 80px;
+    height: 30px;
+    background-color: rgb(23, 152, 226);
+}
+#menu{
+    width: 15px;
+    height: 15px;
+    padding: 15px;
+}
+#youtube_logo {
+    width: 100px;
+    height: 50px;
+}
+input {
+    width: 600px;
+    height: 30px;
+}
+#search_icon {
+    width: 20px;
+    height: 20px;
+    border: solid gray 1px;
+}
+
+#upload {
+    width: 20px;
+    height: 20px;
 }

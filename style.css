@@ -1,8 +1,16 @@
+/* css reset */
+* {
+    margin: 0;
+    padding: 0;
+}
 body {
     background-color: rgb(202, 199, 199);
 }
 header { grid-area: header; }
-.video { grid-area: main; }
+.video_screen { grid-area: video; }
+.video_details { grid-area: details; }
+.description { grid-area: description; }
+.loading { grid-area: loading; }
 .sidebar { grid-area: side; }
 footer { grid-area: foot; }
 
@@ -11,12 +19,14 @@ footer { grid-area: foot; }
     display: grid;
     grid-template-areas: 
     'header header header'
-    'main main side'
+    'video video side'
+    'details details side'
+    'description description side'
+    'loading loading side'
     'foot foot foot';
     margin: auto;
-    grid-gap: 10px;
-    background-color: rgb(202, 199, 199);
-    padding: 20px;
+    grid-gap: 8px;
+    background-color: rgb(206, 206, 206);
 }
 nav {
     display: flex;
@@ -24,9 +34,13 @@ nav {
     
 }
 #signin {
-    width: 80px;
+    width: 60px;
     height: 30px;
     background-color: rgb(23, 152, 226);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    margin: 7px;
 }
 #language p {
     background-color: rgb(23, 152, 226);
@@ -49,6 +63,7 @@ nav {
 input {
     width: 600px;
     height: 30px;
+    margin-top: 7px;
 }
 #search_icon {
     width: 20px;
@@ -59,11 +74,16 @@ input {
 #upload {
     width: 20px;
     height: 20px;
+    margin-top: 7px;;
 }
 #learn_more a {
     float: right;
 }
-.sidebar, header, footer, .video {
+.video_screen {
+    height: fit-content;
+}
+
+.sidebar, header, footer, .video_details, .description, .loading {
  background-color: white;
 }
 #subscribe {
@@ -82,7 +102,27 @@ footer {
     justify-content: space-between;
     
 }
-span {
-    text-align: center;
-    position: relative;
+#userlogo {
+    float: left;
+}
+#views {
+    float: right;
+    font-size: large;
+    color: gray;
+    font-weight: bold;
+}
+#subscribe {
+    height: 25px;
+    width: 80px;
+}
+#video_details {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#username span, #username, #subscribe{
+    padding-left:10px;
+    padding-bottom: 6px;
+}
+#userdetails {
+    padding-top: 10px;
 }

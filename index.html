@@ -25,27 +25,29 @@
                 <p>Choose your language<span>x</span></p>
             </div>
             <div id="learn_more">
-                <p>You are viewing YouTube in English (US). You can change this preference below <a href="">Learn more</a></p>
+                <p>You are viewing YouTube in English (US). You can change this preference below <a href="">Learn
+                        more</a></p>
             </div>
-           
-                
-           
+
+
+
         </header>
-        <section class="video">
-            <section id="video_screen">
+            <section class="video_screen">
                 <video width="640" height="360" controls>
                     <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
                     Your browser does not support the video tag, please use chrome v4.0 or later.
                 </video>
             </section>
-            <section id=video_details>
-                <label id="video_title">A bunny video part 1: The Crash</label>
-                <img id="userlogo" src="images/download.jpg" alt="userlogo">
-                <div id="username">
-                    <p>Jane & Ahmad</p>
+            <section class=video_details>
+                <h3 id="video_title">A bunny video part 1: The Crash</h3>
+                <div id=userdetails>
+                    <img id="userlogo" src="images/download.jpg" alt="userlogo">
+                    <div id="username">
+                        <span>Jane & Ahmad</span>
+                    </div>
+                    <img id="subscribe" src="images/subcribe button.jpg" alt="subscribe">
+                    <label id="views">20,391 views</label>
                 </div>
-                <img id="subscribe" src="images/subcribe button.jpg" alt="subscribe">
-                <label id="views">20,391 views</label>
                 <div class="video_icons_left">
                     <button id="add">Add to</button>
                     <button id="share">Share</button>
@@ -54,8 +56,10 @@
                 <div class="video_icons_right"><button id="like">Like</button>
                     <button id="dislike">Dislike</button>
                 </div>
+            </section>
+            <section class="description">
                 <div id="video_date">
-                    <h3>Published on April 29th 2020</h3>
+                    <h5>Published on April 29th 2020</h5>
                 </div>
                 <div id="video_description">
                     <p>This is a bunny video and a butterfly. In this video a butterfly got smashed with a coconut.</p>
@@ -63,36 +67,45 @@
                 <div id="show_more">
                     <p>SHOW MORE</p>
                 </div>
-                <div id="loading">
-                    <p>loading...</p>
-                </div>
             </section>
-        </section>
+            <div class="loading">
+                <p>loading...</p>
+            </div>
         <section class="sidebar">
             <div id="side_videos">
                 <ul>
-                    <li> <img src="images/0425d088770dd5fbb04c5830b5d45ceb7f87eb22"><span>Hello World, this is our Youtube Video Homepage. Check it out.</span></li>
-                    <li> <img src="images/30341e348ffdfd8ef110d868a3f4892d1dff1719"><span>Hello World, this is our Youtube Video Homepage. Check it out.</span></li>
-                    <li> <img src="images/3e74c5bf2dadd9fe3ec6089804970180b60cbfcd"><span>Hello World, this is our Youtube Video Homepage. Check it out.</span></li>
-                    <li> <img src="images/42fcf704757c206b21126f9ef6c413eff28de822"><span>Hello World, this is our Youtube Video Homepage. Check it out.</span></li>
-                    <li> <img src="images/495e6661840ba5e59315b8d9fbd12e8f79916207"><span>Hello World, this is our Youtube Video Homepage. Check it out.</span></li>
-                    <li> <img src="images/5db65ef125469d0b5b9b1a07b61c9cee64cbdfac"><span>Hello World, this is our Youtube Video Homepage. Check it out.</span></li>
-                    <li> <img src="images/6350ed47768d4be4388f5a8a2b530730b3520802"><span>Hello World, this is our Youtube Video Homepage. Check it out.</span></li>
-                    <li> <img src="images/6b60f3abb556233757873da7cedd5b091744ce34"><span>Hello World, this is our Youtube Video Homepage. Check it out.</span></li>
-                    <li> <img src="images/71a8551dc420f7a68c7e3fa3f91e5af9b702eae8"><span>Hello World, this is our Youtube Video Homepage. Check it out.</span></li>
-                    <li> <img src="images/872b157fed3ecb14099122fcb5f981408ec8d7d2"><span>Hello World, this is our Youtube Video Homepage. Check it out.</span></li>
+                    <li> <img src="images/0425d088770dd5fbb04c5830b5d45ceb7f87eb22"><span>Hello World, this is our
+                            Youtube Video Homepage. Check it out.</span></li>
+                    <li> <img src="images/30341e348ffdfd8ef110d868a3f4892d1dff1719"><span>Hello World, this is our
+                            Youtube Video Homepage. Check it out.</span></li>
+                    <li> <img src="images/3e74c5bf2dadd9fe3ec6089804970180b60cbfcd"><span>Hello World, this is our
+                            Youtube Video Homepage. Check it out.</span></li>
+                    <li> <img src="images/42fcf704757c206b21126f9ef6c413eff28de822"><span>Hello World, this is our
+                            Youtube Video Homepage. Check it out.</span></li>
+                    <li> <img src="images/495e6661840ba5e59315b8d9fbd12e8f79916207"><span>Hello World, this is our
+                            Youtube Video Homepage. Check it out.</span></li>
+                    <li> <img src="images/5db65ef125469d0b5b9b1a07b61c9cee64cbdfac"><span>Hello World, this is our
+                            Youtube Video Homepage. Check it out.</span></li>
+                    <li> <img src="images/6350ed47768d4be4388f5a8a2b530730b3520802"><span>Hello World, this is our
+                            Youtube Video Homepage. Check it out.</span></li>
+                    <li> <img src="images/6b60f3abb556233757873da7cedd5b091744ce34"><span>Hello World, this is our
+                            Youtube Video Homepage. Check it out.</span></li>
+                    <li> <img src="images/71a8551dc420f7a68c7e3fa3f91e5af9b702eae8"><span>Hello World, this is our
+                            Youtube Video Homepage. Check it out.</span></li>
+                    <li> <img src="images/872b157fed3ecb14099122fcb5f981408ec8d7d2"><span>Hello World, this is our
+                            Youtube Video Homepage. Check it out.</span></li>
                 </ul>
             </div>
 
         </section>
         <footer>
             <img id="footer_logo" src="images/Youtube Logo.jpg" alt="Youtube logo">
-                <button>Language: English</button>
-                <button>Location: Microverse</button>
-                <button>Restricted Mode: On</button>
-                <button>History</button>
-                <button>Help</button>
-            
+            <button>Language: English</button>
+            <button>Location: Microverse</button>
+            <button>Restricted Mode: On</button>
+            <button>History</button>
+            <button>Help</button>
+
 
         </footer>
     </div>

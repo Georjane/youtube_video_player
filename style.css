@@ -9,12 +9,13 @@ footer { grid-area: foot; }
 .container {
     max-width: 1000px;
     display: grid;
-    grid-template-areas: 'header header header'
+    grid-template-areas: 
+    'header header header'
     'main main side'
     'foot foot foot';
     margin: auto;
     grid-gap: 10px;
-    background-color: white;
+    background-color: rgb(202, 199, 199);
     padding: 20px;
 }
 nav {
@@ -26,6 +27,15 @@ nav {
     width: 80px;
     height: 30px;
     background-color: rgb(23, 152, 226);
+}
+#language p {
+    background-color: rgb(23, 152, 226);
+    padding: 10px;
+    color: white;
+}
+#language span {
+    float: right;
+    color: white;
 }
 #menu{
     width: 15px;
@@ -50,7 +60,29 @@ input {
     width: 20px;
     height: 20px;
 }
+#learn_more a {
+    float: right;
+}
+.sidebar, header, footer, .video {
+ background-color: white;
+}
+#subscribe {
+    width: 100px;
+    height: 50px;
+}
+#footer_logo {
+    width: 100px;
+    height: 50px;   
+}
+ul {
+list-style-type: none;
+}
 
-.sidebar {
-    display: inline-block;
+footer {
+    justify-content: space-between;
+    
+}
+span {
+    text-align: center;
+    position: relative;
 }

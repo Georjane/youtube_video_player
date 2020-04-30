@@ -1,9 +1,19 @@
 body {
     background-color: rgb(202, 199, 199);
 }
+header { grid-area: header; }
+.video { grid-area: main; }
+.sidebar { grid-area: side; }
+footer { grid-area: foot; }
+
 .container {
     max-width: 1000px;
+    display: grid;
+    grid-template-areas: 'header header header'
+    'main main side'
+    'foot foot foot';
     margin: auto;
+    grid-gap: 10px;
     background-color: white;
     padding: 20px;
 }
@@ -39,4 +49,8 @@ input {
 #upload {
     width: 20px;
     height: 20px;
+}
+
+.sidebar {
+    display: inline-block;
 }

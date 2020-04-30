@@ -30,6 +30,7 @@ footer { grid-area: foot; }
     margin: auto;
     grid-gap: 8px;
     background-color: rgb(206, 206, 206);  
+    border: solid gray 1px;
 }
 nav {
     display: flex;
@@ -71,7 +72,6 @@ input {
 #search_icon {
     width: 20px;
     height: 20px;
-    border: solid gray 1px;
 }
 #upload {
     width: 20px;
@@ -86,8 +86,23 @@ input {
     padding: 7px;
 }
 
-.sidebar, header, footer, .video_details, .description, .loading, .video_screen{
+.sidebar, header, footer, .video_details, .description, .loading{
  background-color: white;
+ padding: 10px;
+}
+.video_icons_left {
+    float: left;
+
+}
+.video_icons_right {
+    float: right;
+    
+}
+#show_more {
+    text-align: center;
+    padding-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: gray;
 }
 #subscribe {
     width: 100px;
@@ -102,8 +117,12 @@ list-style-type: none;
 }
 
 footer {
-    justify-content: space-between;
-    
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+footer button {
+    height: 20px;
 }
 #userlogo {
     float: left;
@@ -136,4 +155,9 @@ footer {
 
 .loading {
     text-align: center;
+}
+ul span {
+    display: block;
+    position: relative;
+    float: right;
 }

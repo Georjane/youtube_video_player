@@ -70,7 +70,6 @@ input {
     height: 20px;
     border: solid gray 1px;
 }
-
 #upload {
     width: 20px;
     height: 20px;
@@ -78,6 +77,10 @@ input {
 }
 #learn_more a {
     float: right;
+}
+#learn_more p {
+    border: solid rgb(23, 152, 226) 2px;
+    padding: 7px;
 }
 .video_screen {
     height: fit-content;

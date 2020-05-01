@@ -5,7 +5,7 @@
     box-sizing: border-box;
 }
 body {
-    background-color: rgb(206, 206, 206); 
+    background-color: gainsboro; 
 }
 header { grid-area: header; }
 .video_screen { grid-area: video; }
@@ -14,10 +14,11 @@ header { grid-area: header; }
 .loading { grid-area: loading; }
 .sidebar { grid-area: side; }
 footer { grid-area: foot; }
-.empty { grid-area: empty; }
+#side_videos ul li span { grid-area: span;}
+#side_videos ul li img { grid-area: image;}
 
 .container {
-    max-width: 1000px;
+    max-width: 930px;
     display: grid;
     grid-template-areas: 
     'header header header'
@@ -25,12 +26,17 @@ footer { grid-area: foot; }
     'details details side'
     'description description side'
     'loading loading side'
-    'empty empty side'
+    'auto auto side'
     'foot foot foot';
     margin: auto;
     grid-gap: 8px;
-    background-color: rgb(206, 206, 206);  
+    background-color: gainsboro;  
     border: solid gray 1px;
+}
+#side_videos ul{
+    display: grid;
+    grid-template-areas: "image span";
+    gap: 10px;
 }
 nav {
     display: flex;
@@ -74,7 +80,7 @@ input {
     height: 20px;
 }
 #upload {
-    width: 20px;
+    width: 17px;
     height: 20px;
     margin-top: 7px;;
 }
@@ -149,15 +155,30 @@ footer button {
     padding-top: 10px;
 }
 
-.empty {
-    height: 500px;
+h5 {
+    margin-bottom: 10px;
+}
+
+#video_title, #username, #views, #video_date, #video_description {
+    font-family: 'YouTube Noto', Roboto, arial, sans-serif;
 }
 
 .loading {
     text-align: center;
 }
-ul span {
-    display: block;
-    position: relative;
-    float: right;
+#side_videos ul li p {
+    font-size: smaller;
+    color: gray;
+    padding: 2px;
+
+}
+#side_videos ul li span {
+    font-weight: 600;
+    font-family: 'YouTube Noto', Roboto, arial, sans-serif;
+    font-size: 14px;
+    color: rgb(43, 41, 41);
+}
+hr {
+    margin: 7px;
+    color:  rgb(185, 185, 185);
 }

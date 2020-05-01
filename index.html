@@ -5,6 +5,7 @@
     <title>Youtube Video Player</title>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="images\youtube_icon.png" />
     <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
 </head>
@@ -32,13 +33,12 @@
         </header>
 
         <div class="video_screen">
-            <video width="640" height="360" controls>
-                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+            <iframe width="640" height="360" src="https://www.youtube.com/embed/HbSjyU2vf6Y" allowfullscreen>
                 Your browser does not support the video tag, please use chrome v4.0 or later.
-            </video>
+            </iframe>
         </div>
         <section class=video_details>
-            <h3 id="video_title">A bunny video part 1: The Crash</h3>
+            <h3 id="video_title">Git & GitHub Tutorial for Beginners #12 - Forking (& Contributing)</h3>
             <div id=userdetails>
                 <img id="userlogo" src="images/download.jpg" alt="userlogo">
                 <div id="username">
@@ -47,6 +47,7 @@
                 <img id="subscribe" src="images/subcribe_button.jpg" alt="subscribe">
                 <label id="views">20,391 views</label>
             </div>
+            <hr>
             <div class="video_icons_left">
                 <button id="add"><i class="fas fa-plus"></i>Add to</button>
                 <button id="share"><i class="fas fa-share"></i>Share</button>
@@ -61,7 +62,8 @@
                 <h5>Published on April 29th 2020</h5>
             </div>
             <div id="video_description">
-                <p>This is a bunny video and a butterfly. In this video a butterfly got smashed with a coconut.</p>
+                <p>This is a video on our Youtube homepage. Watch and enjoy!!! Leave a comment, hit the like button and
+                    don't forget to subscribe!</p>
             </div>
             <div id="show_more">
                 <p>SHOW MORE</p>
@@ -70,43 +72,52 @@
         <div class="loading">
             <span>loading...</span>
         </div>
-        <div class="empty"></div>
-
         <!--sidebar-->
 
         <div class="sidebar">
             <div id="side_videos">
                 <ul>
-                    <li> <img src="images/0425d088770dd5fbb04c5830b5d45ceb7f87eb22" alt=""><span>Hello World, this is
-                            our
-                            Youtube Video Homepage. Check it out.</span></li>
-                    <li> <img src="images/30341e348ffdfd8ef110d868a3f4892d1dff1719" alt=""><span>Hello World, this is
-                            our
-                            Youtube Video Homepage. Check it out.</span></li>
-                    <li> <img src="images/3e74c5bf2dadd9fe3ec6089804970180b60cbfcd" alt=""><span>Hello World, this is
-                            our
-                            Youtube Video Homepage. Check it out.</span></li>
-                    <li> <img src="images/42fcf704757c206b21126f9ef6c413eff28de822" alt=""><span>Hello World, this is
-                            our
-                            Youtube Video Homepage. Check it out.</span></li>
-                    <li> <img src="images/495e6661840ba5e59315b8d9fbd12e8f79916207" alt=""><span>Hello World, this is
-                            our
-                            Youtube Video Homepage. Check it out.</span></li>
-                    <li> <img src="images/5db65ef125469d0b5b9b1a07b61c9cee64cbdfac" alt=""><span>Hello World, this is
-                            our
-                            Youtube Video Homepage. Check it out.</span></li>
-                    <li> <img src="images/6350ed47768d4be4388f5a8a2b530730b3520802" alt=""><span>Hello World, this is
-                            our
-                            Youtube Video Homepage. Check it out.</span></li>
-                    <li> <img src="images/6b60f3abb556233757873da7cedd5b091744ce34" alt=""><span>Hello World, this is
-                            our
-                            Youtube Video Homepage. Check it out.</span></li>
-                    <li> <img src="images/71a8551dc420f7a68c7e3fa3f91e5af9b702eae8" alt=""><span>Hello World, this is
-                            our
-                            Youtube Video Homepage. Check it out.</span></li>
-                    <li> <img src="images/872b157fed3ecb14099122fcb5f981408ec8d7d2" alt=""><span>Hello World, this is
-                            our
-                            Youtube Video Homepage. Check it out.</span></li>
+                    <li> <img src="images/0425d088770dd5fbb04c5830b5d45ceb7f87eb22" alt=""></li>
+                    <li><span>Youtube Video Homepage<p>Microverse</p>
+                            <p>5,000 views</p>
+                        </span></li>
+                    <li> <img src="images/30341e348ffdfd8ef110d868a3f4892d1dff1719" alt=""></li>
+                    <li><span>Youtube Video Homepage<p>Microverse</p>
+                            <p>5,000 views</p>
+                        </span></li>
+                    <li> <img src="images/3e74c5bf2dadd9fe3ec6089804970180b60cbfcd" alt=""></li>
+                    <li><span>Youtube Video Homepage<p>Microverse</p>
+                            <p>5,000 views</p>
+                        </span></li>
+                    <li> <img src="images/42fcf704757c206b21126f9ef6c413eff28de822" alt=""></li>
+                    <li><span>Youtube Video Homepage<p>Microverse</p>
+                            <p>5,000 views</p>
+                        </span></li>
+                    <li> <img src="images/495e6661840ba5e59315b8d9fbd12e8f79916207" alt=""></li>
+                    <li><span>Youtube Video Homepage<p>Microverse</p>
+                            <p>5,000 views</p>
+                        </span></li>
+                    <li> <img src="images/5db65ef125469d0b5b9b1a07b61c9cee64cbdfac" alt=""></li>
+                    <li><span>Youtube Video Homepage<p>Microverse</p>
+                            <p>5,000 views</p>
+                        </span></li>
+                    <li> <img src="images/6350ed47768d4be4388f5a8a2b530730b3520802" alt=""></li>
+                    <li><span>Youtube Video Homepage<p>Microverse</p>
+                            <p>5,000 views</p>
+                        </span></li>
+                    <li> <img src="images/6b60f3abb556233757873da7cedd5b091744ce34" alt=""></li>
+                    <li><span>Youtube Video Homepage<p>Microverse</p>
+                            <p>5,000 views</p>
+                        </span></li>
+                    <li> <img src="images/71a8551dc420f7a68c7e3fa3f91e5af9b702eae8" alt=""></li>
+                    <li><span>Youtube Video Homepage<p>Microverse</p>
+                            <p>5,000 views</p>
+                        </span></li>
+                    <li> <img src="images/872b157fed3ecb14099122fcb5f981408ec8d7d2" alt=""></li>
+                    <li><span>Youtube Video Homepage<p>Microverse</p>
+                            <p>5,000 views</p>
+                        </span></li>
+
                 </ul>
             </div>
 

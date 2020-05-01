@@ -18,7 +18,7 @@ footer { grid-area: foot; }
 #side_videos ul li img { grid-area: image;}
 
 .container {
-    max-width: 930px;
+    max-width: 1000px;
     display: grid;
     grid-template-areas: 
     'header header header'
@@ -33,11 +33,12 @@ footer { grid-area: foot; }
     background-color: gainsboro;  
     border: solid gray 1px;
 }
-#side_videos ul{
-    display: grid;
-    grid-template-areas: "image span";
-    gap: 10px;
-}
+.sidebar, header, footer, .video_details, .description, .loading{
+    background-color: white;
+    padding: 10px;
+   }
+
+/* header */
 nav {
     display: flex;
     justify-content: space-between;
@@ -92,17 +93,33 @@ input {
     padding: 7px;
 }
 
-.sidebar, header, footer, .video_details, .description, .loading{
- background-color: white;
- padding: 10px;
+
+/* sidebar */
+#side_videos ul {
+    display: grid;
+    grid-template-areas: "image span";
+    gap: 10px;
+    list-style-type: none;
 }
-.video_icons_left {
-    float: left;
+#side_videos ul li p {
+    font-size: smaller;
+    color: gray;
+    padding: 2px;
 
 }
+#side_videos ul li span {
+    font-weight: 600;
+    font-family: 'YouTube Noto', Roboto, arial, sans-serif;
+    font-size: 14px;
+    color: rgb(43, 41, 41);
+}
+
+/* video */
+.video_icons_left {
+    float: left;
+}
 .video_icons_right {
-    float: right;
-    
+    float: right;  
 }
 #show_more {
     text-align: center;
@@ -114,21 +131,18 @@ input {
     width: 100px;
     height: 50px;
 }
-#footer_logo {
-    width: 100px;
-    height: 50px;   
+#video_title, #username, #views, #video_date, #video_description {
+    font-family: 'YouTube Noto', Roboto, arial, sans-serif;
 }
-ul {
-list-style-type: none;
+.loading span {
+    padding-left: 5px;
 }
-
-footer {
-    display: flex;
-    justify-content: space-around;
-    padding: 20px;
+.loading {
+    text-align: center;
 }
-footer button {
-    height: 20px;
+hr {
+    margin: 7px;
+    color:  rgb(185, 185, 185);
 }
 #userlogo {
     float: left;
@@ -159,26 +173,16 @@ h5 {
     margin-bottom: 10px;
 }
 
-#video_title, #username, #views, #video_date, #video_description {
-    font-family: 'YouTube Noto', Roboto, arial, sans-serif;
+/* footer */
+#footer_logo {
+    width: 100px;
+    height: 50px;   
 }
-
-.loading {
-    text-align: center;
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
 }
-#side_videos ul li p {
-    font-size: smaller;
-    color: gray;
-    padding: 2px;
-
-}
-#side_videos ul li span {
-    font-weight: 600;
-    font-family: 'YouTube Noto', Roboto, arial, sans-serif;
-    font-size: 14px;
-    color: rgb(43, 41, 41);
-}
-hr {
-    margin: 7px;
-    color:  rgb(185, 185, 185);
+footer button {
+    height: 20px;
 }

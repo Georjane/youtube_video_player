@@ -1,7 +1,7 @@
 # Project: Embedding Images and Videos
 This is a youtube video player page cloned using HTML and CSS.
 
-<img src="images/screenshot" alt="Homepage Screenshot">
+<img src="images/screenshot.png" alt="Homepage Screenshot">
 
 This is a youtube video player homepage that plays a video. It has a navigation bar, a video screen, a sidebar and a footer.
 
@@ -13,8 +13,8 @@ This is a youtube video player homepage that plays a video. It has a navigation 
 
 # Authors
 <ul>
-<li>Github: Georjane</li>
-<li>Github: Ahmadchata</li>
+<li>GitHub: @georjane</li>
+<li>GitHub: @ahmadchata</li>
 </ul>
 
 # Show your support

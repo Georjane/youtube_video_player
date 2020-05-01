@@ -6,6 +6,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.11.2/css/all.css" />
 </head>
 
 <body>
@@ -16,7 +17,7 @@
                 <img id="youtube_logo" src="images/Youtube_Logo.jpg" alt="youtube_logo">
                 <div>
                     <input type="text" placeholder="Search">
-                    <img id="search_icon" src="images/search.png" alt="search_icon">
+                    <button><i class="fas fa-search"></i></button>
                 </div>
                 <img id="upload" src="images/arrows.png" alt="upload">
                 <button id="signin">Sign in</button>
@@ -28,72 +29,83 @@
                 <p>You are viewing YouTube in English (US). You can change this preference below <a href="">Learn
                         more</a></p>
             </div>
-
-
-
         </header>
-            <div class="video_screen">
-                <video width="640" height="360" controls>
-                    <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
-                    Your browser does not support the video tag, please use chrome v4.0 or later.
-                </video>
+
+        <div class="video_screen">
+            <video width="640" height="360" controls>
+                <source src="https://www.w3schools.com/html/mov_bbb.mp4" type="video/mp4">
+                Your browser does not support the video tag, please use chrome v4.0 or later.
+            </video>
+        </div>
+        <section class=video_details>
+            <h3 id="video_title">A bunny video part 1: The Crash</h3>
+            <div id=userdetails>
+                <img id="userlogo" src="images/download.jpg" alt="userlogo">
+                <div id="username">
+                    <span>Jane & Ahmad</span>
+                </div>
+                <img id="subscribe" src="images/subcribe_button.jpg" alt="subscribe">
+                <label id="views">20,391 views</label>
             </div>
-            <section class=video_details>
-                <h3 id="video_title">A bunny video part 1: The Crash</h3>
-                <div id=userdetails>
-                    <img id="userlogo" src="images/download.jpg" alt="userlogo">
-                    <div id="username">
-                        <span>Jane & Ahmad</span>
-                    </div>
-                    <img id="subscribe" src="images/subcribe_button.jpg" alt="subscribe">
-                    <label id="views">20,391 views</label>
-                </div>
-                <div class="video_icons_left">
-                    <button id="add">Add to</button>
-                    <button id="share">Share</button>
-                    <button id="more">more</button>
-                </div>
-                <div class="video_icons_right"><button id="like">Like</button>
-                    <button id="dislike">Dislike</button>
-                </div>
-            </section>
-            <section class="description">
-                <div id="video_date">
-                    <h5>Published on April 29th 2020</h5>
-                </div>
-                <div id="video_description">
-                    <p>This is a bunny video and a butterfly. In this video a butterfly got smashed with a coconut.</p>
-                </div>
-                <div id="show_more">
-                    <p>SHOW MORE</p>
-                </div>
-            </section>
-            <div class="loading">
-                <span>loading...</span>
+            <div class="video_icons_left">
+                <button id="add"><i class="fas fa-plus"></i>Add to</button>
+                <button id="share"><i class="fas fa-share"></i>Share</button>
+                <button id="more"><i class="fas fa-more"></i>more</button>
             </div>
-            <div class="empty"></div>
+            <div class="video_icons_right"><button id="like"><i class="fas fa-thumbs-up"></i>Like</button>
+                <button id="dislike"><i class="fas fa-thumbs-down"></i>Dislike</button>
+            </div>
+        </section>
+        <section class="description">
+            <div id="video_date">
+                <h5>Published on April 29th 2020</h5>
+            </div>
+            <div id="video_description">
+                <p>This is a bunny video and a butterfly. In this video a butterfly got smashed with a coconut.</p>
+            </div>
+            <div id="show_more">
+                <p>SHOW MORE</p>
+            </div>
+        </section>
+        <div class="loading">
+            <span>loading...</span>
+        </div>
+        <div class="empty"></div>
+
+        <!--sidebar-->
+
         <div class="sidebar">
             <div id="side_videos">
                 <ul>
-                    <li> <img src="images/0425d088770dd5fbb04c5830b5d45ceb7f87eb22" alt=""><span>Hello World, this is our
+                    <li> <img src="images/0425d088770dd5fbb04c5830b5d45ceb7f87eb22" alt=""><span>Hello World, this is
+                            our
                             Youtube Video Homepage. Check it out.</span></li>
-                    <li> <img src="images/30341e348ffdfd8ef110d868a3f4892d1dff1719" alt=""><span>Hello World, this is our
+                    <li> <img src="images/30341e348ffdfd8ef110d868a3f4892d1dff1719" alt=""><span>Hello World, this is
+                            our
                             Youtube Video Homepage. Check it out.</span></li>
-                    <li> <img src="images/3e74c5bf2dadd9fe3ec6089804970180b60cbfcd" alt=""><span>Hello World, this is our
+                    <li> <img src="images/3e74c5bf2dadd9fe3ec6089804970180b60cbfcd" alt=""><span>Hello World, this is
+                            our
                             Youtube Video Homepage. Check it out.</span></li>
-                    <li> <img src="images/42fcf704757c206b21126f9ef6c413eff28de822" alt=""><span>Hello World, this is our
+                    <li> <img src="images/42fcf704757c206b21126f9ef6c413eff28de822" alt=""><span>Hello World, this is
+                            our
                             Youtube Video Homepage. Check it out.</span></li>
-                    <li> <img src="images/495e6661840ba5e59315b8d9fbd12e8f79916207" alt=""><span>Hello World, this is our
+                    <li> <img src="images/495e6661840ba5e59315b8d9fbd12e8f79916207" alt=""><span>Hello World, this is
+                            our
                             Youtube Video Homepage. Check it out.</span></li>
-                    <li> <img src="images/5db65ef125469d0b5b9b1a07b61c9cee64cbdfac" alt=""><span>Hello World, this is our
+                    <li> <img src="images/5db65ef125469d0b5b9b1a07b61c9cee64cbdfac" alt=""><span>Hello World, this is
+                            our
                             Youtube Video Homepage. Check it out.</span></li>
-                    <li> <img src="images/6350ed47768d4be4388f5a8a2b530730b3520802" alt=""><span>Hello World, this is our
+                    <li> <img src="images/6350ed47768d4be4388f5a8a2b530730b3520802" alt=""><span>Hello World, this is
+                            our
                             Youtube Video Homepage. Check it out.</span></li>
-                    <li> <img src="images/6b60f3abb556233757873da7cedd5b091744ce34" alt=""><span>Hello World, this is our
+                    <li> <img src="images/6b60f3abb556233757873da7cedd5b091744ce34" alt=""><span>Hello World, this is
+                            our
                             Youtube Video Homepage. Check it out.</span></li>
-                    <li> <img src="images/71a8551dc420f7a68c7e3fa3f91e5af9b702eae8" alt=""><span>Hello World, this is our
+                    <li> <img src="images/71a8551dc420f7a68c7e3fa3f91e5af9b702eae8" alt=""><span>Hello World, this is
+                            our
                             Youtube Video Homepage. Check it out.</span></li>
-                    <li> <img src="images/872b157fed3ecb14099122fcb5f981408ec8d7d2" alt=""><span>Hello World, this is our
+                    <li> <img src="images/872b157fed3ecb14099122fcb5f981408ec8d7d2" alt=""><span>Hello World, this is
+                            our
                             Youtube Video Homepage. Check it out.</span></li>
                 </ul>
             </div>

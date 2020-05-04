@@ -115,6 +115,19 @@ input {
 }
 
 /* video */
+.video_screen {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+.frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
 .video_icons_left {
     float: left;
 }

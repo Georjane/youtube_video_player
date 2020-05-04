@@ -44,15 +44,6 @@ nav {
     justify-content: space-between;
     
 }
-#signin {
-    width: 60px;
-    height: 30px;
-    background-color: rgb(23, 152, 226);
-    color: white;
-    border: none;
-    border-radius: 4px;
-    margin: 7px;
-}
 #language p {
     background-color: rgb(23, 152, 226);
     padding: 10px;
@@ -72,18 +63,9 @@ nav {
     height: 50px;
 }
 input {
-    width: 600px;
+    padding-left: 10px;
+    width: 400px;
     height: 30px;
-    margin-top: 7px;
-}
-#search_icon {
-    width: 20px;
-    height: 20px;
-}
-#upload {
-    width: 17px;
-    height: 20px;
-    margin-top: 7px;;
 }
 #learn_more a {
     float: right;
@@ -91,6 +73,36 @@ input {
 #learn_more p {
     border: solid rgb(23, 152, 226) 2px;
     padding: 7px;
+}
+.right_icons i {
+    margin-top: 10px;
+    padding-left: 15px;
+    display: inline-block;
+}
+#left_icons i {
+    float: left;
+    padding: 15px 10px 0px 0px;
+}
+#avatar {
+    float: right;
+    margin-left: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+}
+#searchcontainer {
+    border:  rgb(241, 241, 241) solid 1px;
+    width: max-content;
+    height: max-content;
+    background-color:  rgb(241, 241, 241);
+    margin-top: 10px;
+}
+#searchcontainer button {
+    font-size: large;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(241, 241, 241); 
+    border: none;
 }
 
 

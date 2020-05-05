@@ -1,0 +1,213 @@
+/* global styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background-color: gainsboro; 
+}
+header { grid-area: header; }
+.video_screen { grid-area: video; }
+.video_details { grid-area: details; }
+.description { grid-area: description; }
+.loading { grid-area: loading; }
+.sidebar { grid-area: side; }
+footer { grid-area: foot; }
+#side_videos ul li span { grid-area: span;}
+#side_videos ul li img { grid-area: image;}
+
+.container {
+    max-width: 1000px;
+    display: grid;
+    grid-template-areas: 
+    'header header header'
+    'video video side'
+    'details details side'
+    'description description side'
+    'loading loading side'
+    'auto auto side'
+    'foot foot foot';
+    margin: auto;
+    grid-gap: 8px;
+    background-color: gainsboro;  
+    border: solid gray 1px;
+}
+.sidebar, header, footer, .video_details, .description, .loading{
+    background-color: white;
+    padding: 10px;
+   }
+
+/* header */
+nav {
+    display: flex;
+    justify-content: space-between;
+    
+}
+#language p {
+    background-color: rgb(23, 152, 226);
+    padding: 10px;
+    color: white;
+}
+#language span {
+    float: right;
+    color: white;
+}
+#menu {
+    width: 15px;
+    height: 15px;
+    margin: 15px;
+}
+#youtube_logo {
+    width: 100px;
+    height: 50px;
+}
+input {
+    padding-left: 10px;
+    width: 400px;
+    height: 30px;
+}
+#learn_more a {
+    float: right;
+}
+#learn_more p {
+    border: solid rgb(23, 152, 226) 2px;
+    padding: 7px;
+}
+.right_icons i {
+    margin-top: 10px;
+    padding-left: 15px;
+    display: inline-block;
+}
+#left_icons i {
+    float: left;
+    padding: 15px 10px 0px 0px;
+}
+#avatar {
+    float: right;
+    margin-left: 10px;
+    height: 30px;
+    width: 30px;
+    border-radius: 20px;
+}
+#searchcontainer {
+    border:  rgb(241, 241, 241) solid 1px;
+    width: max-content;
+    height: max-content;
+    background-color:  rgb(241, 241, 241);
+    margin-top: 10px;
+}
+#searchcontainer button {
+    font-size: large;
+    padding-left: 10px;
+    padding-right: 10px;
+    background-color: rgb(241, 241, 241); 
+    border: none;
+}
+
+
+/* sidebar */
+#side_videos ul {
+    display: grid;
+    grid-template-areas: "image span";
+    gap: 10px;
+    list-style-type: none;
+}
+#side_videos ul li p {
+    font-size: smaller;
+    color: gray;
+    padding: 2px;
+
+}
+#side_videos ul li span {
+    font-weight: 600;
+    font-family: 'YouTube Noto', Roboto, arial, sans-serif;
+    font-size: 14px;
+    color: rgb(43, 41, 41);
+}
+
+/* video */
+.video_screen {
+    position: relative;
+    overflow: hidden;
+    padding-top: 56.25%;
+}
+.frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+.video_icons_left {
+    float: left;
+}
+.video_icons_right {
+    float: right;  
+}
+#show_more {
+    text-align: center;
+    padding-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    color: gray;
+}
+#subscribe {
+    width: 100px;
+    height: 50px;
+}
+#video_title, #username, #views, #video_date, #video_description {
+    font-family: 'YouTube Noto', Roboto, arial, sans-serif;
+}
+.loading span {
+    padding-left: 5px;
+}
+.loading {
+    text-align: center;
+}
+hr {
+    margin: 7px;
+    color:  rgb(185, 185, 185);
+}
+#userlogo {
+    float: left;
+}
+#views {
+    float: right;
+    font-size: large;
+    color: gray;
+    font-weight: bold;
+}
+#subscribe {
+    height: 25px;
+    width: 80px;
+}
+#video_details {
+    padding-left: 10px;
+    padding-right: 10px;
+}
+#username span, #username, #subscribe{
+    padding-left:10px;
+    padding-bottom: 6px;
+}
+#userdetails {
+    padding-top: 10px;
+}
+
+h5 {
+    margin-bottom: 10px;
+}
+
+/* footer */
+#footer_logo {
+    width: 100px;
+    height: 50px;   
+}
+footer {
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+}
+footer button {
+    height: 20px;
+}
